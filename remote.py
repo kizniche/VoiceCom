@@ -5,8 +5,9 @@
 #
 #  Kyle Gabriel (2015)
 #
-# Start with: remote.py -up
-#             remote.py -s
+#  Usage: remote.py --initialize
+#         remote.py --down
+#         remote.py -s
 
 import getopt
 import sys
