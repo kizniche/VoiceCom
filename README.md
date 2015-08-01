@@ -3,8 +3,10 @@ This sets up pocketsphinx to recognize voice commands to raise and lower a proje
 ### Software install
 
 `sudo apt-get update`
+
 `sudo apt-get upgrade`
-`sudo apt-get install vim bison libasound2-dev swig python-dev mplayer`
+
+`sudo apt-get install bison libasound2-dev swig python-dev mplayer`
 
 ```
 wget http://sourceforge.net/projects/cmusphinx/files/sphinxbase/5prealpha/sphinxbase-5prealpha.tar.gz
@@ -14,7 +16,6 @@ cd ./sphinxbase-5prealpha
 make clean all
 make check
 sudo make install
-Building PocketSphinx
 ```
 
 ```
@@ -59,6 +60,6 @@ Extract the contents with `tar xzvf file.tgz`
 
 `sudo cp remote.py /usr/local/bin/`
 
-replace file.lm and file.dic with the location of the .lm and .dic files extracted from the generated language model .tgz
+replace file.lm and file.dic in the following command with the location of the .lm and .dic files extracted from the generated language model .tgz
 
 `./listen_respond -adcdev hw:1,0 -hmm /usr/local/share/pocketsphinx/model/en-us/en-us -lm ./path/to/file.lm -dict ./path/to/file.dic -samprate 16000/8000/48000 -inmic yes`
