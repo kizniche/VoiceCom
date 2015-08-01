@@ -1,4 +1,4 @@
-This sets up pocketsphinx to recognize voice commands to raise and lower a projector screen, with the use of a RF remote controlled by the GPIO of a Raspberry Pi.
+This sets up pocketsphinx to recognize voice commands to raise and lower a projector screen, with the use of an <a href="https://github.com/kizniche/projector-remote">RF remote controlled by the GPIO of a Raspberry Pi</a>.
 
 ### Software install
 
